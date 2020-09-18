@@ -1,3 +1,7 @@
 {
-    "image": "my-flask-app:latest"
+    "image": "my-flask-app:latest",
+    "remoteEnv": {
+        "LC_ALL": "C.UTF-8",
+        "LANG": "C.UTF-8"
+    }
 }
