@@ -3,6 +3,9 @@ FROM amd64/ubuntu:18.04
 ADD . .
 WORKDIR /
 
+RUN export LC_ALL=en_US.utf-8
+RUN export LANG=en_US.utf-8
+
 RUN apt update -y
 RUN apt upgrade -y
 RUN apt-get install apt-transport-https -y
